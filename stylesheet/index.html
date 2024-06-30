@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Save The Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<!-- Tutorials,O.,2021. Available at: https://youtu.be/mgk_2d4lhm8 [Accessed 11 May 2023] -->
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Save Our <span>Earth</span></a>
+        <nav>
+            <ul>
+                <li><a href="../stylesheet/index.html">Home</a></li>
+                <li><a href="../stylesheet/aboutme.html">About Me</a></li>
+                <li><a href="../stylesheet/sustainablegoals.html">Sustainable Goals</a></li>
+                <li><a href="../stylesheet/sp.html">SP Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="text"><span>The earth is what we all have </span><br> in common.</h2>
+        <img src="../images/bird1.png" id="bird1">
+        <!-- Nadzin,2020. Available at: https://www.freepik.com/premium-vector/flock-flying-silhouette-birds-vector-illustration_31481295.htm#query=black%20bird&position=6&from_view=search&track=ais [Accessed 11 May 2023] -->
+        <img src="../images/bird2.png" id="bird2">
+        <!-- Nadzin,2020. Available at: https://www.freepik.com/premium-vector/flock-flying-silhouette-birds-vector-illustration_31481295.htm#query=black%20bird&position=6&from_view=search&track=ais [Accessed 11 May 2023] -->
+        <img src="../images/landscape.png" id="landscape">
+        <!-- Freepik,2019. Available at: https://www.freepik.com/free-vector/variety-forest_796507.htm [Accessed 11 May 2023] -->
+        <img src="../images/rock.png" id="rock">
+        <!-- Brgfx,2022. Available at: https://www.freepik.com/free-vector/natural-environment-lanscape-scene_5837826.htm [Accessed 11 May 2023] -->
+        <img src="../images/water.png" id="water">
+        <!-- Brgfx,2022. Available at: https://www.freepik.com/free-vector/natural-environment-lanscape-scene_5837826.htm [Accessed 11 May 2023] -->
+    </section>
+    <div class="sec">
+        <h2>Someone is sitting in the shade today because
+            <br>someone planted a tree long ago." ― Warren Buffett
+        </h2>
+        <br>
+        <p>The Earth is comparable to our mother, as is widely known. It provides us with all the necessities for a
+            happy life, nourishing us. Our use of the earth's resources depletes them gradually over time. And our use
+            of these resources is outpacing their resupply. That leads to our own demise, unfortunately.
+            <br>
+        <p>In today's world, individuals lament the oppressive heat, respiratory issues, and general lack of health. It
+            is time to stop and reflect on the reason for this entire situation.</p>
+        <br>
+        <p>The greenhouse effect of gases is accelerating global warming. Galloping population growth, unmanaged
+            industrialisation, mining, and careless and poor urban planning are the causes of environmental degradation.
+        </p>
+        <br>
+        <p>Deforestation to make more land available for commercial use has increased the problem by indiscriminately
+            cutting down trees. toxic smoke is released.</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let landscape = document.getElementById('landscape');
+        let rock = document.getElementById('rock');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        document.body.style.overflowX = "hidden";
+
+        window.addEventListener('scroll', function () {
+
+            var value = window.scrollY;
+            var minHeight = 0; // Minimum scroll position
+            var maxHeight = 1000; // Maximum scroll position
+
+            if (scrollY < minHeight) {
+                window.scrollTo(0, minHeight);
+            } else if (scrollY > maxHeight) {
+                window.scrollTo(0, maxHeight);
+            }
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            landscape.style.marginTop = value * 1 + 'px';
+            rock.style.top = value * -0.12 + 'px';
+            water.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>

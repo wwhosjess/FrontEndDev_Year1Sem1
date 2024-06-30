@@ -1,0 +1,79 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --Abel: 'Abel', cursive;
+    background: linear-gradient(315deg, #f5d7d9 10%, #d8e0f0 74%);
+}
+
+span {
+    font-family: var(--Abel);
+}
+
+.header>h1>span {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(232, 26, 26);
+}
+
+.header>h1 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.side-content-container {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    flex: 15%;
+    padding: 1vw;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.content-container {
+    display: flex;
+    height: auto;
+}
+
+.main-content-container {
+    flex: 70%;
+    margin-left: 12px;
+}
+
+.image-animation {
+    width: 30vw;
+    transition: all 1s ease;
+}
+
+.site-content .main-content .post-image,
+img:hover {
+    transform: scale(1.2);
+}
+
+.main-content-container {
+    font-size: 15px;
+}
+
+.main-content .post-image {
+    margin-left: 200px;
+}
+
+.main-content>p {
+    color: #686666da;
+}
+
+.post-image .post-info {
+    margin-left: 75px;
+}
+
+button {
+    background-color: rgb(208, 255, 205);
+}

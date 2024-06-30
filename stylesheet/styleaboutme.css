@@ -1,0 +1,90 @@
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5%;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --back-img: url(../images/neon.jpg);
+    /*  Freepik,2019. Available at: https://www.freepik.com/free-vector/copy-space-wavy-white-background_12348959.htm [Accessed 13 May 2023] */
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    --back-color: var(--secondary-color);
+    --back-img: url(../images/black.jpg);
+    /* Freepik,2019. Available at: https://www.freepik.com/free-vector/realistic-luxury-background_24681311.htm#query=black%20background&position=49&from_view=search&track=ais [Accessed 26 May 2023] */
+}
+
+.details {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.details {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--secondary-color);
+    padding-right: 700px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+span {
+    color: #cdb4db;
+}
+
+.details p {
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+
+.selfie {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.selfie img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.selfie:hover .girl {
+    left: 45%;
+}
+
+.selfie:hover .aesbg {
+    bottom: 30px;
+}
+
+body {
+    background: var(--back-img);
+    background-size: cover;
+}

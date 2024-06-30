@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="styleaboutme.css">
+</head>
+
+<body>
+
+    <div>
+        <a class="navbar-brand" href="index.html">
+            <img src="../images/giphy.gif" alt="little planet" width="70" height="60"
+                class="d-inline-block align-text-top">
+            <!-- Yymessapps,2020. Available at: https://media.giphy.com/media/RiEnaT1YaCaHaszy9m/giphy.gif [Accesed 26 May 2023]-->
+        </a>
+    </div>
+
+    <div class="moon">
+        <img src="../images/moon.png" id="icon">
+        <!-- Phosphor,2021. Available at: https://www.svgrepo.com/svg/363767/moon-duotone [Accessed 24 May 2023] -->
+    </div>
+
+    <div class="details">
+        <h1>I'm <span>Jesslyn </span>Tan</h1>
+        <p>I'm a first-year student at Infocomm Security Management (DISM).
+            <br>My values center around personal growth, adaptability, and inner peace.
+            <br>Sleeping and reading are my interest. In my spare time, I like to relax by reading a good book or
+            sleeping to refuel.
+            <br>I have a complex and analytical personality with a strong desire for knowledge and self-improvement. I
+            value my alone time and tend to be introspective, but am able to adapt and lead when necessary. My strengths
+            lie in my ability to see the big picture, make strategic decisions, and execute plans effectively. I am not
+            afraid to challenge conventional thinking and am always seeking ways to improve and grow.
+        </p>
+    </div>
+    <div class="selfie">
+
+        <img src="../images/aes.png" class="aesbg">
+        <!-- Bagvania,2021. Available at: https://pin.it/6Aq7axk [Accessed 13 May 2023] -->
+        <img src="../images/removeselfiebg.png" class="girl">
+        <!-- Tan,J.,2023. Available at: My phone [Accessed 13 May 2023] -->
+        <img src="../images/buff.png" class="buff">
+        <!-- Yandex,D.,2021. Available at: https://pin.it/10Mkld4 [Accessed 13 May 2023] -->
+        <div id="light-theme" class="dark-theme"></div>
+
+    </div>
+
+    <script>
+
+        var lightTheme = document.getElementById("light-theme");
+        console.log(lightTheme.classList);
+
+        window.addEventListener("load", (event) => {
+            console.log("Classlist");
+            console.log(icon.classList);
+        })
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                document.getElementById("icon").src = "../images/sun.png";
+                //Icons,C.,2022. Available at: https://www.svgrepo.com/svg/432325/sun [Accessed 24 May 2023]
+            } else {
+                icon.src = "../images/moon.png";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

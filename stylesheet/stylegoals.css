@@ -1,0 +1,249 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    text-align: center;
+    margin: 40px auto 30px;
+}
+
+/*1st*/
+.stflip-card {
+
+    width: 300px;
+    height: 350px;
+    margin: auto;
+}
+
+.stflip-card-back {
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    transform: rotateY(180deg);
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 1vw 1vh 1vw rgb(212, 199, 209);
+}
+
+.stflip-card-back .stback-header {
+    height: 45%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.stflip-card-back .stback header img {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.stflip-card-inner {
+    position: relative;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.stflip-card-back,
+.stflip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.stflip-card:hover .stflip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.stflip-card-back .stback-footer {
+    height: 55%;
+    padding: 0 15px;
+    font-size: x-small;
+}
+
+.stback-footer a {
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    transition: 0.5s;
+    margin-bottom: 6%;
+}
+
+.stback-footer a:hover {
+    background: #0000;
+    border: 1px solid #000;
+}
+
+/*2nd*/
+.flip-card {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+}
+
+.flip-card-back {
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    color: #ffff;
+    transform: rotateY(180deg);
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 1vw 1vh 1vw rgb(212, 199, 209);
+}
+
+.flip-card-back .back-header {
+    height: 45%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.flip-card-back .back header img {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-back,
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .back-footer {
+    height: 55%;
+    padding: 0 15px;
+    font-size: x-small;
+}
+
+.back-footer a {
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    transition: 0.5s;
+    margin-bottom: 6%;
+}
+
+.back-footer a:hover {
+    background: #0000;
+    border: 1px solid #000;
+}
+
+/*3rd*/
+.rdflip-card {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+}
+
+.rdflip-card-back {
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    color: #ffff;
+    transform: rotateY(180deg);
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 1vw 1vh 1vw rgb(212, 199, 209);
+}
+
+.rdflip-card-back .rdback-header {
+    height: 45%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.rdflip-card-back .rdback header img {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.rdflip-card-inner {
+    position: relative;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.rdflip-card-back,
+.rdflip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.rdflip-card:hover .rdflip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.rdflip-card-back .rdback-footer {
+    height: 55%;
+    padding: 0 15px;
+    font-size: x-small;
+}
+
+.rdback-footer a {
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    transition: 0.5s;
+    margin-bottom: 6%;
+}
+
+.rdback-footer a:hover {
+    background: #0000;
+    border: 1px solid #000;
+}
+
+/*General*/
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    background: url("../images/grbg.png");
+    /* Lim,C.,2022. Available from: My friend [Accessed 9 May 2023] */
+    background-size: cover;
+}
+
+.title {
+    font-size: large;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.title h1 {
+    color: white;
+    font-size: 4em;
+}

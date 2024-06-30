@@ -1,0 +1,180 @@
+@import url("style.css");
+
+@font-face {
+    font-family: 'Rancho';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/rancho/v17/46kulbzmXjLaqZRVam_h.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    margin: 0%;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#header .logo {
+    color: #094b65;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+#header .logo span {
+    color: #3e8145;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094b65;
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #094b65;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #c2f970;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65, transparent);
+    z-index: 10;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 100;
+}
+
+section #text {
+    position: absoulte;
+    color: #094b65;
+    font-size: 10ve;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-500%);
+}
+
+section #text span {
+    font-size: 1.22em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background-image: url(../images/fish1.jpg);
+    /* Macrovector,2021. Available at: https://www.freepik.com/free-vector/colorful-underwater-life-template_9581012.htm#query=ocean&position=11&from_view=search&track=sph [Accessed 11 May 2023] */
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 350;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-animation: slidein 100s;
+    animation: slidein 98s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 2000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 2000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+/* Davies,W.,2023. Available at: https://alvarotrigo.com/blog/animated-backgrounds-css [Accessed 11 May 2023] */
+
+.sec h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+}
